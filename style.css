@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction:column;
+    font-family: 'Finger Paint', cursive;
+    background-image: url('images/fantasybuch.jpg');
+    background-size: 100% 100%;
+    background-position-x: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*------- HEADER -------*/
+
+header{
+    background-color: rgb(37, 36, 36);
+    border : rgb(168, 151, 93) solid 2px;
+    color : rgb(243, 220, 146);
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right : rgb(168, 151, 93) solid 1px;
+}
+
+header img{
+    width: 10rem;
+    height: auto;
+}
+
+.bandeau{
+    padding-left: 0;
+}
+
+.date{
+    font-size: 0.8rem;
+}
+
+.titrePage{
+    border-top: rgb(168, 151, 93) solid 1px;
+    border-bottom: rgb(168, 151, 93) solid 1px;
+}
+
+.titrePage h2{
+    font-size: 1.2rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav a{
+    color : rgb(243, 220, 146);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+nav a:hover{
+    color : rgb(243, 220, 146);
+}
+
+/*------- FOOTER -------*/
+
+footer{
+    background-color: rgb(37, 36, 36);
+    align-items: center;
+    justify-content: center;
+    border : rgb(168, 151, 93) solid 1px;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer{
+    color : rgb(243, 220, 146);
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy,
+.footer a,
+.footer a:hover{
+    color : rgb(243, 220, 146);
+}
+
+
+/*------- MAIN ACCUEIL -------*/
+
+main{
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+
+.milieu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.accroche{
+    display: flex;
+    border : rgb(168, 151, 93) solid 1px; 
+    background-color: rgba(243, 220, 146, 0.856);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    color: rgb(37, 36, 36);
+}
+
+.explication{
+    display: flex;
+    flex-wrap: wrap;
+    border : rgb(168, 151, 93) solid 1px; 
+    background-color: rgba(243, 220, 146, 0.856);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    height: fit-content;
+    color: rgb(37, 36, 36);
+}
+
+.button{
+    border: 1px solid #9c8e5e;
+    border-radius: 18px;
+    background: #ffdf75;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffdf75), to(#d4be6f));
+    background: -moz-linear-gradient(top, #ffdf75, #d4be6f);
+    background: linear-gradient(to bottom, #ffdf75, #d4be6f);
+    text-shadow: #ffffbe 1px 1px 1px;
+}
+
+.button a{
+    color: rgb(37, 36, 36);
+}
+
+.button:hover,
+.button:focus {
+    background: #9c8e5e;
+    border: 1px solid #ffdf75;
+    background: -webkit-gradient(linear, left top, left bottom, from(#998646), to(#d4be6f));
+    background: -moz-linear-gradient(top, #998646, #d4be6f);
+    background: linear-gradient(to bottom, #998646, #d4be6f);
+}
+
+/*------ INSCRIPTION / CONNEXION / DIFFERENTES PAGES ------*/
+
+.cadreInscription, 
+.cadreConnexion,
+.enregistrement,
+.listeModif,
+.ficheModif,
+.construction,
+.suppression,
+.mentions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border : #a8975d solid 1px; 
+    background-color: rgba(243, 220, 146, 0.856);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: rgb(37, 36, 36);
+}
+
+.descSite,
+.editSite,
+.hebergementSite,
+.cnil{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.cadreInscription label,
+.cadreConnexion label{
+    align-items: flex-start;
+}
+
+.enregistrement input{
+    font-size: 0.8rem;
+}
+
+.enregistrement textarea,
+.ficheModif textarea{
+    width: 100%;
+}
+
+.scrollmenu {
+    height: 45vh;
+    overflow-y: scroll;
+}
+
+.persoAModif{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.persoAModif a{
+    text-decoration: none;
+}
+
+.lienModif{
+    display: flex;
+    justify-content: right;
+    color : rgb(37, 36, 36);
+    font-size: 0.9rem;
+}
+
+.lienModif:hover{
+    color : rgb(37, 36, 36);
+}
+
+.balise{
+    font-size: 0.8rem;
+}
+
+.message{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border : rgb(168, 151, 93) solid 1px; 
+    background-color: rgba(243, 220, 145, 0.855);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: rgb(37, 36, 36);
+    height: fit-content;
+}
+
+.messageInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border : rgb(168, 151, 93) solid 1px; 
+    background-color: rgba(243, 220, 145, 0.855);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: rgb(37, 36, 36);
+}
+
+.resultatRecherche{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border : rgb(168, 151, 93) solid 1px; 
+    background-color: rgba(243, 220, 146, 0.856);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: rgb(37, 36, 36);
+    min-height: 40vh;
+}
+.caution{
+    height: 4rem;
+}
+
+.lienPerso{
+    color : rgb(37, 36, 36);
+    font-size: 0.9rem;
+}
+
+.lienPerso:hover{
+    color : rgb(37, 36, 36);
+    font-size: 1rem;
+}
+
+.listeAffich{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border : rgb(168, 151, 93) solid 1px; 
+    background-color: rgba(243, 220, 146, 0.856);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: rgb(37, 36, 36);
+}
+
+.panneau{
+    height: 10rem;
+}
+
+.avertissement{
+    font-size: 0.8rem;
+    border : 1px solid #252424;
+    border-radius: 5px;
+}
+
+.cautionFiche{
+    height: 2rem;
+}
+
+/*------ TOMES ------*/
+
+.bragelonne{
+    font-size: 0.9rem;
+}
+
+.bragelonne a{
+    text-decoration: underline;
+    color : #252424;
+}
+
+.description img{
+    width: 50%;
+    height: auto;
+}
+
+.description{
+    position: static;
+}
+.infobulle:hover::after,
+.infobulle:focus::after{
+    width: 30em;
+    height: min-content;
+    background-color: rgba(243, 220, 146, 0.959);
+    border : rgb(168, 151, 93) solid 1px;
+    border-radius: 12px;
+    padding : 1rem;
+    content: attr(aria-label); /* Affiche le aria-label */
+    position : fixed;
+    top : 25%;
+    left : 25%;
+    transform: translateX(20%) translateY(70%);
+    z-index: 1;
+    white-space: wrap; /*Pour aller automatiquement à la ligne */
+    color : rgb(37, 36, 36);
+    font-family: 'Finger Paint', cursive;
+    font-size: 0.7rem;
+    text-align: left;
+
+}
+
+.titreTome{
+    font-size: 0.7rem;
+    background-color: rgba(243, 220, 146, 0.959);
+    border : rgb(168, 151, 93) solid 1px;
+    border-radius: 5px;
+}
+
+.info{
+    display:none;
+    width: 30em;
+    height: min-content;
+    background-color: rgba(243, 220, 146, 0.959);
+    border : rgb(168, 151, 93) solid 1px;
+    border-radius: 12px;
+    padding : 1rem;
+    white-space: wrap; /*Pour aller automatiquement à la ligne */
+    color : rgb(37, 36, 36);
+    font-family: 'Finger Paint', cursive;
+    font-size: 0.7rem;
+    text-align: left;
+	position: fixed;
+    top : 50%;
+    left : 25%;
+	z-index:10;
+}
+
+.tome{
+    display: inline-block;
+}
+
+.tome:hover .info{
+    display:block; 
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+
+    main{
+        height: content ;
+    }
+
+    .info{
+        position: fixed;
+        top : 50%;
+        left : 5%;
+    }
+
+    .links{
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    footer{
+        position: static;
+    }
+    
+    .footer{
+        flex-direction: column;
+    }
+
+    .lienModif{
+        font-size: 0.7rem;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    .tome{
+        font-size: 0.9rem;
+    }
+
+    .date{
+        font-size: 1rem;
+    }
+
+    .titrePage h2{
+        font-size: 1.4rem;
+    }
+
+    nav a{
+        font-size: 1.1rem;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+
+    .accroche{
+        font-size: 1.6rem;
+    }
+
+    .explication,
+    .cadreInscription, 
+    .cadreConnexion,
+    .enregistrement,
+    .listeModif,
+    .ficheModif,
+    .construction,
+    .mentions{
+        font-size: 1rem;
+    }
+}
